@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Function to compile and run main
+# Main2 function
 run_main() {
     make clean
     make main
@@ -8,8 +8,7 @@ run_main() {
     mv V* data/
     mv O* data/
 }
-
-# Function to compile and run main2
+# Main function
 run_main2() {
     make clean
     make main2
@@ -17,7 +16,7 @@ run_main2() {
     mv k*.txt data/
 }
 
-# Check for input parameter
+# Check inptu
 if [ "$1" == "main" ]; then
     run_main
 elif [ "$1" == "main2" ]; then
